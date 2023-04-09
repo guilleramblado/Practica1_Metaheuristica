@@ -1,0 +1,18 @@
+Cada fichero de datos almacenado en este directorio representa un determinado problema de QAP, almacenando la información de la siguiente forma:
+-Nº de unidades (o localizaciones) en la primera línea (= N)
+-Linea vacía
+-Matriz de flujos (N líneas de fichero, en cada línea N enteros separados por un espacio)
+-Linea vacía
+-Matriz de distancias (N líneas de fichero, en cada línea N enteros separados por un espacio)
+
+El directorio raíz contiene los siguientes subdirectorios:
+-> /BIN: ejecutable y ficheros de datos
+-> /FUENTES: archivo .cpp con la función 'main'
+-> /includes: archivo de cabecera '.h' con la definición e implementación de todos los struct y funciones necesarias
+-> Makefile (nos permitirá obtener el ejecutable ejecutando el comando 'make' desde terminal, sitúandonos en el directorio raíz de nuestra práctica)
+
+Para ejecutar correctamente el programa, realice los siguientes pasos:
+1. Sitúese en el directorio raíz de la práctica
+2. Abra la terminal y ejecute el comando 'make' para generar el ejecutable (dentro de ./BIN)
+3. Para ejecutar el ejecutable correctamente, ingrese el siguiente comando por terminal: './BIN/ejecutable semilla' o './ejecutable semilla' si se sitúa dentro de ./BIN
+Recuerde que es necesario indicar la semilla a utilizar a la hora de ejecutar dicho ejecutable. En el caso de que no se indique, no se ejecutará, indicando un mensaje de error.
