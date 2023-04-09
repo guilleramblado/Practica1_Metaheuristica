@@ -150,7 +150,7 @@ bool comparar_flujos(pair<int,int> a,pair<int,int> b){
     if(a.second>b.second){
         return true; //primero va el potencial de flujo mayor
     }
-    elif(a.second==b.second){
+    else if(a.second==b.second){
         //mismo potencial, colocamos por ej la pareja tal que el indice de la unidad sea mayor
         return(a.first>b.first);
     }
@@ -166,7 +166,7 @@ bool comparar_distancias(pair<int,int> a,pair<int,int> b){
     if(a.second<b.second){
         return true; //primero va el potencial de distancia menor
     }
-    elif(a.second==b.second){
+    else if(a.second==b.second){
         //mismo potencial, colocamos por ej la pareja tal que el indice de la unidad sea menor
         return(a.first<b.first);
     }
